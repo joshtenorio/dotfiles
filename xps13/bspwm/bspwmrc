@@ -8,7 +8,7 @@ bspc monitor -d I II III IV V VI VII
 # sxhkd & # is this necessary? testing if not
 
 # start polybar
-./startbspwmbar.sh
+./startbt21bar.sh
 
 # start compton the compositor
 # todo: replace this with picom since picom is maintained now
@@ -27,8 +27,4 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-#bspc rule -a zoom desktop='^7'
+#bspc rule -a Chromium desktop='^2'

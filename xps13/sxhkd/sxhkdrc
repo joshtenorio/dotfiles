@@ -48,3 +48,11 @@ super + Tab
 # move focused window to workspace #
 super + shift + {1,2,3,4,5,6,7}
 	bspc node -d ^{1,2,3,4,5,6,7}
+
+# make focused window floating
+super + shift + {f,t}
+	bspc node -t {floating, tiled}
+
+# screenshot
+super + p
+	gnome-screenshot
