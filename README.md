@@ -1,5 +1,5 @@
 # dotfiles
-Configs I use for my computers
+configs I use for my computers
 # NUC
 
 # xps 13
