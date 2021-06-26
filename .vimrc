@@ -1,9 +1,9 @@
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+set autoindent
+set number
+
+hi Conceal ctermfg=white ctermbg= none guifg=#FFFFFF guibg=#002B36
 call plug#begin('~/.vim/plugged')
+
 Plug 'lervag/vimtex'
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
@@ -15,7 +15,8 @@ Plug 'sirver/ultisnips'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+Plug 'ycm-core/YouCompleteMe', {'do': './install.py' }
+
 call plug#end()
 
-set autoindent
-set number
