@@ -67,3 +67,7 @@ super + v
 # preselect the direction
 super + {h,j,k,l}
 	bspc node -p {west,south,north,east}
+
+# swap two windows
+super + shift + {h,j,k,l}
+	bspc node -s {west,south,north,east}
