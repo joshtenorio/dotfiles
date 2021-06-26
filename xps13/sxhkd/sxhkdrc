@@ -22,8 +22,11 @@ super + f
 super + g
 	google-chrome
 
+# open settings
+super + s
+	gnome-control-center
 # close window
-alt + f4
+super + w
 	bspc node -k
 # switch to previous window in workspace
 alt + Tab
@@ -56,3 +59,11 @@ super + shift + {f,t}
 # screenshot
 super + p
 	gnome-screenshot
+
+# open VS code
+super + v
+	code
+
+# preselect the direction
+super + {h,j,k,l}
+	bspc node -p {west,south,north,east}
