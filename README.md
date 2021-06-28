@@ -12,3 +12,4 @@ various configs I use for my computers
 - add dunst or some other notification thing
 - sage theme: rethink bright color scheme for alacritty
 - remove unecessary stuff from neofetch
+- add a script to switch between bt21, sage, and any future themes
