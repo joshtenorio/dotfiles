@@ -1,3 +1,3 @@
 sage theme
 
-WIP, screenshot soon
+wallpaper by /u/kugelblitz6030 on reddit
