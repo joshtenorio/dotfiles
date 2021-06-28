@@ -71,3 +71,11 @@ super + {h,j,k,l}
 # swap two windows
 super + shift + {h,j,k,l}
 	bspc node -s {west,south,north,east}
+
+# open rofi window
+super + shift + r
+	rofi -show window
+
+# open rofi run
+super + r
+	rofi -show run
