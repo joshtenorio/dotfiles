@@ -5,5 +5,4 @@ configs I use for my computers
 # xps 13
 Todo:
 - add dunst or some other notification thing
-- add hotkeys for bspwm to move around windows in tiled mode
-- think about making polybar more colorful and floating 
+- sage theme: rethink bright color scheme for alacritty
