@@ -1,6 +1,7 @@
 # dotfiles
 various configs I use for my laptop
-
+## Scripts
+`save.sh` Copy files from `$HOME/.config` into repository
 ### Screenshots
 
 ![bt21 theme](screenshots/xps13-bt21-theme.png)
