@@ -11,9 +11,9 @@ waterlight = #20dbfa
 [bar/giyu]
 ;bottom = true
 
-modules-left = bspwm battery wifi
+modules-left = bspwm wifi
 modules-center = date
-modules-right = brightness volume cpu ram
+modules-right = battery brightness volume cpu ram
 
 background = ${color.background}
 foreground = ${color.foreground}

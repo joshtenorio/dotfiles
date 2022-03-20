@@ -73,3 +73,7 @@ super + shift + {f,t}
 # screenshot
 super + x
     flameshot gui
+
+# uwu
+super + m
+    alacritty -e cmatrix
