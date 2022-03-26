@@ -1,0 +1,79 @@
+# spawn terminal
+ctrl + alt + t
+    alacritty
+
+# reload sxhkd
+alt + Escape
+    pkill -USR1 -x sxhkd
+
+# quit/restart bspwm
+alt + shift + {q,r}
+    bspc {quit,wm -r}
+
+# open file manager
+super + f
+    alacritty -e ranger
+
+# open browser
+super + b
+   firefox
+
+# open settings
+super + s
+    cinnamon-settings
+
+# close window
+super + w
+    bspc node -k
+
+# switch to previous window in workspace
+alt + Tab
+    bspc node -f last.local
+
+# adjust brightness
+super + shift + {9,0}
+    brightness set 5%{-,+}
+
+# adjust audio
+super + {9,0}
+    amixer -q set Master 5%{-,+}
+
+# switch workspace
+super + {1,2,3,4,5,6,7}
+    bspc desktop -f ^{1,2,3,4,5,6,7}
+
+# move window to a workspace
+super + shift + {1,2,3,4,5,6,7}
+    bspc node -d ^{1,2,3,4,5,6,7}
+
+# go to last workspace
+super + Tab
+    bspc desktop -f last
+
+# run rofi drun
+super + r
+    rofi -show drun
+
+# open powermenu
+super + p
+    rofi -show power-menu -modi power-menu:rofi-power-menu --choices lockscreen,suspend,reboot,shutdown
+
+# preselect direction
+super + {h,j,k,l}
+    bspc node -p {west,south,north,east}
+
+# swap two windows
+super + shift + {h,j,k,l}
+    bspc node -s {west, south, north, east}
+
+# make focused window floating or tiled
+super + shift + {f,t}
+    bspc node -t {floating, tiled}
+
+# screenshot
+super + x
+    flameshot gui
+
+# uwu
+super + m
+    alacritty -e cmatrix

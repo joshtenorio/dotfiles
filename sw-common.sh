@@ -6,6 +6,7 @@ cd common
 cp -rf $HOME/.config/sxhkd sxhkd
 cp -rf $HOME/.config/ranger ranger
 cp -rf $HOME/.config/zathura zathura
-cp -rf $HOME/.vimrc .vimrc
+cp -r $HOME/.vimrc .vimrc
+cp -r $HOME/bin/huion.conf huion.conf
 
 cd ..
