@@ -6,7 +6,6 @@ echo "this will overwrite. are you sure? ctrl + c if you dont want to"
 read uwu
 
 echo "Loading " $theme " theme..."
-cd $theme
-cp -rf $theme/bspwm $HOME/.config/bspwm
-cp -rf $theme/alacritty $HOME/.config/alacritty
-cp -rf $theme/polybar $HOME/.config/polybar
+cp -rf $theme/bspwm $HOME/.config/
+cp -rf $theme/alacritty $HOME/.config
+cp -rf $theme/polybar $HOME/.config/
