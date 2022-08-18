@@ -1,4 +1,6 @@
 # dotfiles
+**NOTICE:** currently under construction
+
 various configs I use for my laptop
 ## Scripts
 `save.sh` Copy files from `$HOME/.config` into repository
@@ -8,7 +10,5 @@ various configs I use for my laptop
 ![sage theme](screenshots/sage-bspwm.png)
 
 ## Todo:
-- sage theme: redo color scheme for alacritty
-- remove unecessary stuff from neofetch
 - add a script to switch between bt21, sage, and any future themes
-- add script to install fonts
+- add install script
