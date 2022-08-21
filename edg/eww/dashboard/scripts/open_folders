@@ -1,0 +1,29 @@
+#!/bin/bash
+
+## Open folders in thunar
+FILE="$HOME/.cache/eww_launch.dashboard"
+CFG="$HOME/.config/eww/dashboard"
+EWW=`which eww`
+
+close_dash() {
+	${EWW} --config "$CFG" close \
+					background profile system clock uptime music github \
+					reddit twitter youtube weather apps mail logout sleep reboot poweroff folders
+	rm -rf "$FILE"
+}
+
+if [[ "$1" == "--cse330" ]]; then
+	close_dash && alacritty -e ranger ~/asu/cse330 &
+elif [[ "$1" == "--cse355" ]]; then
+	close_dash && alacritty -e ranger ~/asu/cse355 &
+elif [[ "$1" == "--cse365" ]]; then
+	close_dash && alacritty -e ranger ~/asu/cse365 &
+elif [[ "$1" == "--cse412" ]]; then
+	close_dash && alacritty -e ranger ~/asu/cse412 &
+elif [[ "$1" == "--mat494" ]]; then
+	close_dash && alacritty -e ranger ~/asu/mat494 &
+
+elif [[ "$1" == "--cfg" ]]; then
+	close_dash && alacritty -e ranger ~/.config &
+
+fi

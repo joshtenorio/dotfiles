@@ -8,3 +8,5 @@ mkdir $theme && cd $theme
 cp -r $HOME/.config/polybar polybar
 cp -r $HOME/.config/alacritty alacritty
 cp -r $HOME/.config/bspwm bspwm
+cp -r $HOME/.config/rofi rofi
+cp -r $HOME/.config/eww eww

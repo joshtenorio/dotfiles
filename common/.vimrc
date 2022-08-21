@@ -11,6 +11,8 @@ autocmd InsertLeave * :set relativenumber
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'ap/vim-css-color'
+
 Plug 'lervag/vimtex'
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
