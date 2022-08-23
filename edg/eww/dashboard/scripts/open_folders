@@ -6,9 +6,9 @@ CFG="$HOME/.config/eww/dashboard"
 EWW=`which eww`
 
 close_dash() {
-	${EWW} --config "$CFG" close \
+	/home/josht/bin/eww --config "$CFG" close \
 					background profile system clock uptime music github \
-					reddit twitter youtube weather apps mail logout sleep reboot poweroff folders
+					reddit twitter youtube weather apps mail logout sleep reboot poweroff folders asu
 	rm -rf "$FILE"
 }
 

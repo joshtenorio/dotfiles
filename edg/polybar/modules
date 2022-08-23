@@ -29,7 +29,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#d90420}%mountpoint%%{F-} %percentage_used%%
+label-mounted = %{F#d90420}FS%{F-} %percentage_used%%
 
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.disabled}
@@ -37,12 +37,14 @@ label-unmounted-foreground = ${colors.disabled}
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume-prefix = "VOL "
+format-volume-prefix = "AU "
 format-volume-prefix-foreground = ${colors.primary}
 format-volume = <label-volume>
 
 label-volume = %percentage%%
 
+format-muted-prefix = "AU "
+format-muted-prefix-foreground = ${colors.primary}
 label-muted = muted
 label-muted-foreground = ${colors.disabled}
 
@@ -77,13 +79,13 @@ type = internal/network
 interval = 5
 format-connected = <label-connected>
 format-disconnected = <label-disconnected>
-label-disconnected = %{F#d90420}%ifname%%{F#707880} disconnected
+label-disconnected = %{F#d90420}WL%{F#707880} disconnected
 
 [module/wlan]
 inherit = network-base
 interface = wlan0
 interface-type = wireless
-label-connected = %{F#d90420}%ifname%%{F-} %essid% %signal%%
+label-connected = %{F#d90420}WL%{F-} %essid% %signal%%
 
 
 [module/eth]
@@ -107,11 +109,11 @@ type = internal/battery
 full-at = 80
 battery = BAT0
 
-format-full-prefix = "BAT "
+format-full-prefix = "BT "
 format-full-prefix-foreground = ${colors.primary}
-format-charging-prefix = "BAT "
+format-charging-prefix = "BT "
 format-charging-prefix-foreground = ${colors.primary}
-format-discharging-prefix = "BAT "
+format-discharging-prefix = "BT "
 format-discharging-prefix-foreground = ${colors.primary}
 format-full = <label-full>
 format-charging = <label-charging>
@@ -121,3 +123,14 @@ label-full = "Full!"
 label-charging = "++%percentage%%"
 label-discharging = "--%percentage:2%%"
 
+[module/backlight]
+type = internal/backlight
+
+card = intel_backlight
+
+use-actual-brightness = true
+
+format = <label>
+format-prefix = "BL "
+format-prefix-foreground = ${colors.primary}
+label = %percentage%%
