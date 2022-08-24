@@ -108,6 +108,7 @@ label-foreground = ${colors.primary}
 type = internal/battery
 full-at = 80
 battery = BAT0
+interval = 5
 
 format-full-prefix = "BT "
 format-full-prefix-foreground = ${colors.primary}
