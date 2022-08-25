@@ -35,6 +35,9 @@ super + {F6,F7}
 
 super + {F2,F3}
     pamixer {-d,-i} 5
+
+super + F1
+    au m
 #
 # bspwm hotkeys
 #
