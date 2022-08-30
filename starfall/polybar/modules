@@ -106,7 +106,7 @@ label-foreground = ${colors.primary}
 
 [module/bat]
 type = internal/battery
-full-at = 80
+full-at = 99
 battery = BAT0
 interval = 5
 
