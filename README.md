@@ -19,11 +19,13 @@ various configs I use for my laptop
 
 `sw-common.sh` Copy theme-agnostic files into repository
 ### Screenshots
+![starfall_theme](screenshots/starfall-bspwm.png)
 ![edg_theme](screenshots/edg-bspwm.png)
 ![bt21 theme](screenshots/xps13-bt21-theme.png)
 ![sage theme](screenshots/sage-bspwm.png)
 
 ## Wallpapers
+- Starfall wallpaper is from endmion1 on Instagram
 - BT21 wallpaper from Google
 - Sage wallpaper is made by a friend
 - EDward Gaming wallpaper is by [/u/Wasteak](https://www.reddit.com/r/leagueoflegends/comments/q5arsx/worlds_2021_wallpapers/)
