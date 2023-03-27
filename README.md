@@ -20,9 +20,6 @@ various configs I use for my laptop
 `sw-common.sh` Copy theme-agnostic files into repository
 ### Screenshots
 ![starfall_theme](screenshots/starfall-bspwm.png)
-![edg_theme](screenshots/edg-bspwm.png)
-![bt21 theme](screenshots/xps13-bt21-theme.png)
-![sage theme](screenshots/sage-bspwm.png)
 
 ## Wallpapers
 - Starfall wallpaper is from endmion1 on Instagram
@@ -31,6 +28,3 @@ various configs I use for my laptop
 - EDward Gaming wallpaper is by [/u/Wasteak](https://www.reddit.com/r/leagueoflegends/comments/q5arsx/worlds_2021_wallpapers/)
 - Samurai Doge (used for lockscreen) is found on [alphacoders.com](https://wall.alphacoders.com/big.php?i=1151373)
 
-## Todo:
-- add a script to switch between bt21, sage, and any future themes
-- add install script
